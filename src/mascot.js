@@ -449,9 +449,10 @@ class OsmosMascot extends EventEmitter {
     // --- Public API ---
     start() {
         if (this.animationFrameId) return;
+        // The canvas must be visible before resizing, otherwise its clientWidth/Height will be 0.
+        this.canvas.style.display = 'block';
         this.updateColors();
         this.resize();
-        this.canvas.style.display = 'block';
         this.updateAndDraw();
         this.emit('start');
     }
