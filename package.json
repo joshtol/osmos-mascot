@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "name": "osmos-mascot",
+  "version": "1.0.0",
+  "description": "A charming, animated mascot component for web applications, inspired by Osmos.",
+  "main": "dist/osmos-mascot.umd.js",
+  "module": "dist/mascot.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w"
+  },
+  "keywords": [
+    "mascot",
+    "animation",
+    "canvas",
+    "ui",
+    "component",
+    "interactive"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^4.9.5"
+  }
+}
